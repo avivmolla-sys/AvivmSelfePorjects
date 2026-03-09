@@ -55,6 +55,7 @@ html {
     width: 100%;
     box-sizing: border-box;
     display: flex;
+    flex-direction: row-reverse; /* השורה שהוספנו כדי להפוך את הצדדים */
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
@@ -64,8 +65,10 @@ html {
 
 .logo-wrapper {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    flex-direction: row; /* מבטיח שהאייקון והטקסט יהיו אחד ליד השני */
+    align-items: center; /* ממרכז אותם אנכית אחד מול השני */
+    gap: 15px; /* הרווח ביניהם */
+    width: auto; /* מוודא שהקופסה לא מתכווצת */
 }
 
 .extra-img {
